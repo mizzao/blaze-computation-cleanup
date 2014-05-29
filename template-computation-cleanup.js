@@ -1,4 +1,4 @@
-B1;3201;0cif (Meteor.isClient) {
+if (Meteor.isClient) {
     Template.hello.greeting = function () {
 	message = Session.get("greeting");
 	alert("Reactive computation got " + message);
