@@ -1,0 +1,20 @@
+<head>
+  <title>template-computation-cleanup</title>
+</head>
+
+<body>
+  {{> controls}}
+</body>
+
+<template name="controls">
+  <button class="random">Change message</button>
+  <button class="remove">Remove template</button>
+</template>
+
+<template name="hello">
+  <div class="greeting">
+    <p>Normal helper: {{greeting}}</p>
+    <p>Helper using with: {{#with greeting}}{{this}}{{/with}}</p>
+  </div>
+</template>
+
